@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<%= flash[:error] %>
+<!-- How does the error helper work -->
+<%= form_tag login_path do %>
+  <%= label_tag :email %>
+  <%= email_field_tag :email %>
+
+  <%= label_tag :password  %>
+  <%= password_field_tag :password  %>
+
+  <%= submit_tag 'Login'  %>
+
+  <a href='/users/new'>Create</a>
+  <!-- Is this a get or post method? -->
+
+<% end %>
+
+<!-- onclick="window.location='/my/link/location';" -->
