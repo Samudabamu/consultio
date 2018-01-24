@@ -1,3 +1,14 @@
 
 
+
+<h2><em><%= @user.name %></em>
+<h2><em><%= @user.email %></em>
+
+
+
 <%= cl_image_tag @user.image%>
+
+
+<%= link_to 'Edit', "/users/#{@user.id}/edit" %>
+
+<%= link_to 'Delete', delete_path(@user.id) %>

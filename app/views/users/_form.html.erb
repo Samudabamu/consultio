@@ -9,20 +9,48 @@
 <% end %>
 
 
-<%= form_for @user, html: {multipart: true} do |f| %>
+<%= form_for @user, html: {class:"form-horizontal", multipart: true} do |f| %>
 
-<%= f.label :name %>
-<%= f.text_field :name %>
-<br>
-<%= f.label :email %>
-<%= f.text_field :email %>
-<br>
-<%= f.label :image %>
-<%= f.cl_image_upload :image %>
-<br>
-<%= f.label :password %>
-<%= f.text_field :password %>
+<div class="form-group">
+  <div class="col-sm-4 offset-md-7">
+    <fieldset>
+    <%= f.label :name %>
+    <%= f.text_field :name, class:"form-control" %>
+    </fieldset>
+  </div>
+</div>
 
-<%= f.submit 'Submit' %>
+<div class="form-group">
+    <div class="col-sm-4 offset-md-7">
+    <fieldset>
+    <%= f.label :email %>
+    <%= f.text_field :email, class:"form-control" %>
+    </fieldset>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-2">
+  <fieldset>
+  <%= f.label :password %>
+  <%= f.text_field :password, class:"form-control" %>
+  </fieldset>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-6">
+    <fieldset>
+      <%= f.label :image %>
+      <%= f.cl_image_upload :image, class:"form-control" %>
+    </fieldset>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-6">
+    <%= f.submit 'click me', class:"btn btn-primary btn-lg" %>
+  </div>
+</div>
 
 <% end %>
