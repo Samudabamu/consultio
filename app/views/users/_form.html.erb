@@ -33,7 +33,16 @@
   <div class="col-sm-2">
   <fieldset>
   <%= f.label :password %>
-  <%= f.text_field :password, class:"form-control" %>
+  <%= f.password_field :password, class:"form-control" %>
+  </fieldset>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-2">
+  <fieldset>
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation, class:"form-control" %>
   </fieldset>
   </div>
 </div>

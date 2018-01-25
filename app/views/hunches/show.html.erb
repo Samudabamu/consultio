@@ -1,0 +1,19 @@
+<h1>Hunches#show</h1>
+<p>Find me in app/views/hunches/show.html.erb</p>
+
+<%= @hunch.name %>
+<%= form_for LineItem.new do |f|%>
+
+<%= f.label :hunch_id %>
+<%= f.text_field :hunch_id, class:"form-control" %>
+
+<%= f.label :cart_id %>
+<%= f.text_field :cart_id, class:"form-control" %>
+
+<%= f.label :quantity %>
+<%= f.text_field :quantity, class:"form-control" %>
+
+<%= f.submit %>
+<% end %>
+
+<p>Add To Cart</p>

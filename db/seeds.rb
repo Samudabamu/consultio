@@ -35,8 +35,11 @@ h7 = Hunch.create name:'Weapon Grade Plutonium', category: c1, api: '_embeded_co
 h8 = Hunch.create name:'Crypto Currencies', category: c2, api: '_embeded_code_'
 h9 = Hunch.create name:'Roulette', category: c3, api: '_embeded_code_'
 
+Cart.create name: qu
+
+
 puts "Created #{Hunch.all.length} hunches."
 
 c1.hunches << h1 << h2 << h3
-c1.hunches << h4 << h5 << h6
-c1.hunches << h7 << h8 << h9
+c2.hunches << h4 << h5 << h6
+c3.hunches << h7 << h8 << h9

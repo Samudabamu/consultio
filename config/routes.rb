@@ -1,26 +1,26 @@
 Rails.application.routes.draw do
 
-  get 'carts/index'
+  # get '/hunches/:id' => 'hunches#show', as: :hunch
 
-  get 'carts/show'
+  # get '/categories/:id' => 'categories#show'
+  # get '/categories' => 'categories#index'
 
-  get 'carts/edit'
+  resources :line_items
+  resources :hunches
+  resources :categories
 
-  get 'carts/new'
-
-resources :users
-
-root to: 'pages#homepage'
-
+  resources :users
 
 
+  root to: 'pages#homepage'
+
+  # get '/hunches/:hunch_id/add' => 'users#add_cart' as: :cart
 
   get '/login' => 'session#new'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
   # Define your own paths?
-  get 'users/:id/delete' => 'users#destroy', as: 'delete'
 
 
 

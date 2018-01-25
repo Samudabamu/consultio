@@ -4,21 +4,22 @@
 <!-- How does the error helper work -->
 
 
-<%= form_tag login_path, html:{class:"form-horizontal", multipart: true} do %>
+<%= form_tag login_path, {class: "form-horizontal"} do %>
 
 <div class="form-group">
   <div class="col-sm-4 offset-md-7">
     <fieldset>
   <%= label_tag :email %>
-  <%= email_field_tag :email %>
+  <%= email_field_tag :email,"", class:"form-control" %>
     </fieldset>
+  </div>
 </div>
 
 <div class="form-group">
-  <div class="col-sm-4">
+  <div class="col-sm-4 offset-md-7">
     <fieldset>
       <%= label_tag :password  %>
-      <%= password_field_tag :password %>
+      <%= password_field_tag :password,"", class:"form-control" %>
     </fieldset>
   </div>
 </div>

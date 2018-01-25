@@ -12,6 +12,38 @@
   <body>
     <div class="container">
 
+          <nav>
+            <div class="container">
+              <ul class="navbar-nav">     <!--what is this class doing?? -->
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+              <div>
+                <% if @current_user.present? %>
+                <a href="/users/<%= @current_user.id %>/edit"><%= @current_user.name %></a>
+                <% else %>
+                <a href="/login">Login</a>
+                <% end %>
+              </div>
+              <div>
+                <% if @current_user.present? %>
+                  <%= link_to 'Logout', login_path, method: :delete %>
+                <% end %>
+
+              </div>
+            </div>
+          </nav>
+
     <%= yield %>
 
     </div>

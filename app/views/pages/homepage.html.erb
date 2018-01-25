@@ -7,32 +7,6 @@
   </head>
   <body>
 
-    <nav>
-      <div class="container">
-        <ul class="navbar-nav">     <!--what is this class doing?? -->
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <div>
-          <% if @current_user.present? %>
-          <a href="/users/<%= @current_user.id %>/edit"><%= @current_user.name %></a>
-          <% else %>
-          <a href="/login">Login</a>
-          <% end %>
-        </div>
-      </div>
-    </nav>
-
     <header class="business-header"> <!--what is this class doing?? -->
       <div class="container">
         <div class="row">
@@ -72,43 +46,19 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Low Risk</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Medium Risk</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+        <% @categories.each do |category| %>
+          <div class="col-sm-4 my-4">
+            <div class="card">
+              <div class="card-body">
+                <%= link_to category_path(category) do %>
+                  <%= image_tag "http://placehold.it/300x200" %>
+                <% end %>
+                <h4 class="card-title"><%=category.investment_type%></h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">High Risk</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-
+        <% end %>
       </div>
     </div>
 
