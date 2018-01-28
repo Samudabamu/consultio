@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>lowrisk-ico</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Hover" transform="translate(-123.000000, -506.000000)">
+            <g id="lowrisk-ico" transform="translate(125.000000, 508.000000)">
+                <circle id="Oval" stroke="#00ABB6" stroke-width="3" cx="34" cy="34" r="34"></circle>
+                <rect id="Rectangle-path" fill="#00ABB6" fill-rule="nonzero" x="22" y="39" width="2" height="4"></rect>
+                <rect id="Rectangle-path" fill="#00ABB6" fill-rule="nonzero" x="25" y="37" width="2" height="6"></rect>
+                <rect id="Rectangle-path" fill="#00ABB6" fill-rule="nonzero" x="28" y="34" width="2" height="9"></rect>
+                <rect id="Rectangle-path" fill="#00ABB6" fill-rule="nonzero" x="31" y="32" width="2" height="12"></rect>
+                <rect id="Rectangle-path" fill="#00ABB6" fill-rule="nonzero" x="35" y="37" width="2" height="6"></rect>
+                <path d="M43.1446899,41.1186096 C42.0959393,41.1186096 41.1229362,40.7941864 40.4490183,40.3851001 L40,41.5276959 C40.6551763,41.9538571 41.7781124,42.2612054 42.8635654,42.2775689 L42.8635654,44 L44.0427265,44 L44.0427265,42.2270556 C45.970772,41.9367822 47,40.6746621 47,39.3278788 C47,37.8103466 46.0269969,36.9231629 44.0989514,36.2074398 C42.470772,35.5934546 41.7781124,35.1502185 41.7781124,34.2630349 C41.7781124,33.5807501 42.3208389,32.7967273 43.7623829,32.7967273 C44.9602856,32.7967273 45.7271307,33.1716638 46.120705,33.3765627 L46.588465,32.2510418 C46.0457385,31.9607684 45.2781124,31.6882813 44.1551763,31.6541315 L44.1551763,30 L42.9947568,30 L42.9947568,31.7224311 C41.2728693,31.9778433 40.1686747,33.0521394 40.1686747,34.4679337 C40.1686747,35.9513162 41.3478358,36.7360504 43.2571397,37.4176237 C44.6416778,37.9291595 45.3718206,38.5089948 45.3718206,39.4474032 C45.3718206,40.4192499 44.473784,41.1186096 43.1446899,41.1186096 Z" id="Shape" fill="#00ABB6" fill-rule="nonzero"></path>
+                <path d="M16,27.1519652 L16,55 L53,55 L53,27.1519652 L34.4996326,14 L16,27.1519652 Z M50.0601331,52.0727876 L18.9391322,52.0727876 L18.9391322,28.6587477 L34.4996326,17.5968122 L50.0601331,28.6587477 L50.0601331,52.0727876 Z" id="Shape" fill="#00ABB6" fill-rule="nonzero"></path>
+                <path d="M48.4288526,12.4462094 L43.908918,8 C43.908918,8 43.908918,12.1523466 43.908918,14.9718412 L34,8 L12,23.4787004 L12,27 L34,11.5212996 L56,27 L56,23.4787004 L48.4288526,18.1516245 L48.4288526,12.4462094 Z" id="Shape" fill="#00ABB6" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
