@@ -13,11 +13,30 @@ body {
   }
 }
 
+.navbar-overlay {
+  z-index: 100;
+}
+
 .business-header {
   height: 707px;
   background: url("https://i.lensdump.com/i/X4I13.png")center;
   background-size: cover;
+  z-index: -100;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

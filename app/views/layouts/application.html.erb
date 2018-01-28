@@ -11,18 +11,10 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="navbar-overlay" class="container">
       <nav>
         <ul class="navbar-nav">
-          <li>
-          <a href="http://localhost:3000" class="glyphicon glyphicon-home"></a>
-          </li>
-          <li>
-            <a href="/users/portfolio" class="glyphicon glyphicon-piggy-bank"></a>
-          </li>
-          <li>
-            <a href="#" class="glyphicon glyphicon-earphone"></a>
-          </li>
+          <img src="https://cdn.rawgit.com/Samudabamu/consultio/master/app/assets/images/inspect/cc-samu/Page%201/Home/logo.svg" alt="">
         <li>
           <% if @current_user.present? %>
           <a href="/users/<%= @current_user.id %>/edit"><%= @current_user.name %></a>
