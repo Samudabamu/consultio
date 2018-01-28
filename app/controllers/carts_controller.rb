@@ -1,4 +1,6 @@
 class CartsController < ApplicationController
+
+  before_action :check_if_logged_in
   def index
   end
 
@@ -13,5 +15,5 @@ class CartsController < ApplicationController
 
   def destroy
   end
-  
+
 end

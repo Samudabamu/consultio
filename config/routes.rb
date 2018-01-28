@@ -5,11 +5,19 @@ Rails.application.routes.draw do
   # get '/categories/:id' => 'categories#show'
   # get '/categories' => 'categories#index'
 
-  resources :line_items
-  resources :hunches
+  resources :hunches do
+    resources :line_items
+  end
+
   resources :categories
 
+  get '/users/portfolio' => 'users#portfolio'
+
   resources :users
+
+  get '/cart' => 'carts#show', as: 'cart'
+
+  # post '/line_item/:hunch_id/add' => 'line_items#create'
 
 
   root to: 'pages#homepage'

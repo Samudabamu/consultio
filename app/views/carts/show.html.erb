@@ -1,2 +1,7 @@
 <h1>Carts#show</h1>
 <p>Find me in app/views/carts/show.html.erb</p>
+
+<%# raise 'hell' %>
+<% @current_user.cart.line_items.each do |i| %>
+  <%= i.quantity %> x <%= i.hunch.name %><br>
+<% end %>

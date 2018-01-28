@@ -2,18 +2,15 @@
 <p>Find me in app/views/hunches/show.html.erb</p>
 
 <%= @hunch.name %>
-<%= form_for LineItem.new do |f|%>
 
-<%= f.label :hunch_id %>
-<%= f.text_field :hunch_id, class:"form-control" %>
+<hr>
 
-<%= f.label :cart_id %>
-<%= f.text_field :cart_id, class:"form-control" %>
+
+
+<%= form_for [@hunch, LineItem.new] do |f|%>
 
 <%= f.label :quantity %>
 <%= f.text_field :quantity, class:"form-control" %>
 
-<%= f.submit %>
+<%= f.submit 'Add' %>
 <% end %>
-
-<p>Add To Cart</p>

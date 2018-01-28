@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>Consultio-Consultious</title>
     <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   </head>
   <body>
 
-    <header class="business-header"> <!--what is this class doing?? -->
+    <header class="business-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -20,21 +21,22 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="mt-4">Want to make some dough?</h2>
+          <h2>Want to make some dough?..</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
           <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+            <a class="btn btn-success btn-lg" href="#">Discover success! &raquo;</a>
           </p>
         </div>
         <div class="col-sm-4">
-          <h2 class="mt-4">Try Contact Us</h2>
+          <h2>Try Contact Us</h2>
           <address>
             <strong>Towers Pseudo</strong>
             <br>13 Iznop Street
             <br>Camana Bay, 26748
             <br>Cayman Islands
           </address>
+          <br>
           <address>
             <abbr title="Phone">P:</abbr>
             (+1) 949 7000
@@ -53,8 +55,16 @@
                 <%= link_to category_path(category) do %>
                   <%= image_tag "http://placehold.it/300x200" %>
                 <% end %>
-                <h4 class="card-title"><%=category.investment_type%></h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+                <ul>
+                  <li><h4 class="card-title">
+                  <%=category.investment_type%></h4>
+                    <ul class="dropdown">
+                      <li>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

@@ -3,8 +3,11 @@
 
 
 body {
-  padding-top: 54px;
+  border: 54px;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
 }
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
@@ -17,6 +20,33 @@ body {
   background-size: cover;
 }
 
+
+
 .card {
   height: 100%;
+}
+
+ul li ul.dropdown{
+    min-width: 100%;
+    background: #f2f2f2;
+    visibility:hidden;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    visibility:visible;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.glyphicon {
+  padding: 10px;
+}
+
+#collapse {
+  text-decoration: none;
 }
